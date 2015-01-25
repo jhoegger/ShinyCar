@@ -12,7 +12,7 @@ About the Data
 ========================================================
 
 The shiny application was developed for analysis of the  
-Motor Trends Car data set fromn 1973-74
+Motor Trends Car data set from 1973-74
 
 
 
@@ -35,7 +35,7 @@ The app is published to the shinyapps site:
 https://jhoegger.shinyapps.io/ShinyCar/
 
 It allows the user to select the following options 
-- Minimum Number of Cylinders (4,6 & 8)
+- Minimum Number of cylinders (4,6 or 8)
 - Minimum Number of gears     (4 or 5)
 
 ![Cylinders and Gears](ShinyCar-figure/CylGears.png)
@@ -44,7 +44,7 @@ About the Analysis
 ========================================================
 
 The application compares auto and manual transmissions 
-using a t-test to assess the impact on Mile per Gallon 
+using a t-test to see the impact on Mile per Gallon 
 
 ### Answering the questions of interest 
 - H0 - Null Hypothesis - The different transmissions 
@@ -55,10 +55,9 @@ transmission does have an impact on the miles per gallon
 About the Plots
 ========================================================
 
-The application also provides a to allow the user to see
+The application also allows the user to see
 the impact of changing the sliders for number of cylinders
 and gears
 
 ![Box Plot](ShinyCar-figure/plots.png)
-
 

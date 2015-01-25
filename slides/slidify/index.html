@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Shiny Car Application</title>
+	<meta name="description" content="Shiny Car Application">
+	<meta name="author" content="John Hoegger">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Shiny Car Application</h3>
+  <p><img src="assets/img/MT.png" alt="Motor Trend"></p>
+
+<p>author: John Hoegger</p>
+
+<p>date: 1/24/2015</p>
+
+<p>Using Shiny Apps and the Motor Trend dataset</p>
+
+<p><a href="https://github.com/jhoegger/ShinyCar">https://github.com/jhoegger/ShinyCar</a> </p>
+
+</article>
+
+<article class="" id="slide-2" style="background:;">
+  <h3>About the Data</h3>
+  <p>The shiny application was developed for analysis of the<br>
+Motor Trends Car data set fromn 1973-74</p>
+
+<pre><code class="r">head(mtcars, 1)
+</code></pre>
+
+<pre><code>##           mpg cyl disp  hp drat   wt  qsec vs am gear carb
+## Mazda RX4  21   6  160 110  3.9 2.62 16.46  0  1    4    4
+</code></pre>
+
+<p>The dataset contains data for 32 different cars</p>
+
+</article>
+
+<article class="" id="slide-3" style="background:;">
+  <h3>About the App</h3>
+  <p>The app is published to the shinyapps site:</p>
+
+<p><a href="https://jhoegger.shinyapps.io/ShinyCar/">https://jhoegger.shinyapps.io/ShinyCar/</a></p>
+
+<p>It allows the user to select the following options </p>
+
+<ul>
+<li>Minimum Number of Cylinders (4, 6 or 8)</li>
+<li>Minimum Number of gears     (4 or 5)</li>
+</ul>
+
+<p><img src="assets/img/CylGears.png" alt="Cylinders and Gears"></p>
+
+</article>
+
+<article class="" id="slide-4" style="background:;">
+  <h3>About the Analysis</h3>
+  <p>The application compares auto and manual transmissions 
+using a t-test to assess the impact on Mile per Gallon </p>
+
+<h3>Answering the questions of interest</h3>
+
+<ul>
+<li>H0 - Null Hypothesis - The different transmissions 
+(auto and manual) do not impact miles per gallon</li>
+<li>Ha - Alternative Hypothesis - The difference in the 
+transmission does have an impact on the miles per gallon</li>
+</ul>
+
+</article>
+
+<article class="" id="slide-5" style="background:;">
+  <h3>About the Plots</h3>
+  <p>The application also provides a to allow the user to see
+the impact of changing the sliders for number of cylinders
+and gears</p>
+
+<p><img src="assets/img/plots.png" alt="Plots"></p>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
